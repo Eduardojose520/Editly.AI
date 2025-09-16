@@ -1,3 +1,8 @@
 export default function Home() {
-  return <div>PhotoFi</div>;
+  return (
+    <div>
+      Photofi
+      <div></div>
+    </div>
+  );
 }

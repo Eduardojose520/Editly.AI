@@ -1,8 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Removed invalid @custom-variant at-rule */
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
