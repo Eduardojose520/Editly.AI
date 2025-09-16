@@ -40,3 +40,11 @@ It allows users to **edit, enhance, and transform images** with modern AI tools,
 ```bash
 git clone https://github.com/your-username/photofi.git
 cd photofi
+
+2️⃣ Install dependencies
+```bash
+bun install
+
+3️⃣ Run the development server
+```bash
+bun dev
