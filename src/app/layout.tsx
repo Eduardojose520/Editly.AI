@@ -4,10 +4,11 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Header } from "@/components/common/header";
 import { ConvexClientProvider } from "./ConvexClientProvider";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -29,10 +30,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ConvexClientProvider>
-            <Header />
-            <main>{children}</main>
-          </ConvexClientProvider>
+          <ClerkProvider>
+            <ConvexClientProvider>
+              <Header />
+              <main>{children}</main>
+            </ConvexClientProvider>
+          </ClerkProvider>
         </ThemeProvider>
       </body>
     </html>
