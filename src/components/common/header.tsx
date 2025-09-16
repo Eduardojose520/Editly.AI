@@ -1,4 +1,5 @@
 "use client";
+import { UserButton, SignedIn, SignedOut } from "@clerk/nextjs";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -60,18 +61,23 @@ export const Header = () => {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <Link
-            href="/signin"
-            className="rounded-lg px-4 py-2 font-medium text-white transition hover:text-pink-400"
-          >
-            Sign In
-          </Link>
-          <Link
-            href="/signup"
-            className="rounded-lg bg-gradient-to-r from-pink-500 to-orange-400 px-3 py-1.5 font-medium text-white shadow-md transition hover:opacity-90"
-          >
-            Sign Up
-          </Link>
+          <SignedOut>
+            <Link href="/sign-in">
+              <button className="rounded-lg px-4 py-2 font-medium text-white transition hover:text-pink-400">
+                Sign In
+              </button>
+            </Link>
+
+            <Link href="/sign-up">
+              <button className="rounded-lg bg-gradient-to-r from-pink-500 to-orange-400 px-3 py-1.5 font-medium text-white shadow-md transition hover:opacity-90">
+                Start Editing
+              </button>
+            </Link>
+          </SignedOut>
+
+          <SignedIn>
+            <UserButton afterSignOutUrl="/" />
+          </SignedIn>
         </div>
       </div>
     </header>

@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Header } from "@/components/common/header";
 import { ConvexClientProvider } from "./ConvexClientProvider";
 import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,7 +31,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ClerkProvider>
+          <ClerkProvider
+            appearance={{
+              baseTheme: [dark],
+            }}
+          >
             <ConvexClientProvider>
               <Header />
               <main>{children}</main>
