@@ -63,13 +63,13 @@ export const Header = () => {
         <div className="flex items-center space-x-4">
           <SignedOut>
             <Link href="/sign-in">
-              <button className="rounded-lg px-4 py-2 font-medium text-white transition hover:text-pink-400">
+              <button className="cursor-pointer rounded-lg px-4 py-2 font-medium text-white transition hover:text-pink-400">
                 Sign In
               </button>
             </Link>
 
             <Link href="/sign-up">
-              <button className="rounded-lg bg-gradient-to-r from-pink-500 to-orange-400 px-3 py-1.5 font-medium text-white shadow-md transition hover:opacity-90">
+              <button className="cursor-pointer rounded-lg bg-gradient-to-r from-pink-500 to-orange-400 px-3 py-1.5 font-medium text-white shadow-md transition hover:opacity-90">
                 Start Editing
               </button>
             </Link>
