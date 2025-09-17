@@ -1,12 +1,15 @@
 "use client";
 import { useStoreUserEffect } from "@/hooks/useStoreUserEffect";
-import { UserButton } from "@clerk/nextjs";
-import { BarLoader } from "react-spinners";
-
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Authenticated, Unauthenticated } from "convex/react";
+
+const UserButton = dynamic(
+  () => import("@clerk/nextjs").then((mod) => mod.UserButton),
+  { ssr: false },
+);
 
 const navLinks = [
   { name: "Features", href: "/features" },
@@ -20,11 +23,18 @@ export const Header = () => {
   const { isLoading } = useStoreUserEffect();
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setScrolled(window.scrollY > 20);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -50,10 +60,11 @@ export const Header = () => {
             <Link
               key={link.href}
               href={link.href}
+              aria-current={path === link.href ? "page" : undefined}
               className={`relative text-sm font-medium transition-colors ${
                 path === link.href
-                  ? "text-neutral-400"
-                  : "text-gray-300 hover:text-neutral-700"
+                  ? "text-pink-400"
+                  : "text-gray-300 hover:text-pink-300"
               }`}
             >
               {link.name}
@@ -66,29 +77,39 @@ export const Header = () => {
 
         <div className="flex items-center space-x-4">
           <Unauthenticated>
-            <Link href="/sign-in">
-              <button className="cursor-pointer rounded-lg px-4 py-2 font-medium text-white transition hover:text-pink-400">
-                Sign In
-              </button>
+            <Link
+              href="/sign-in"
+              className="cursor-pointer rounded-lg px-4 py-2 font-medium text-white transition hover:text-pink-400"
+            >
+              Sign In
             </Link>
 
-            <Link href="/sign-up">
-              <button className="cursor-pointer rounded-lg bg-gradient-to-r from-pink-500 to-orange-400 px-3 py-1.5 font-medium text-white shadow-md transition hover:opacity-90">
-                Start Editing
-              </button>
+            <Link
+              href="/sign-up"
+              className="cursor-pointer rounded-lg bg-gradient-to-r from-pink-500 to-orange-400 px-3 py-1.5 font-medium text-white shadow-md transition hover:opacity-90"
+            >
+              Start Editing
             </Link>
           </Unauthenticated>
 
           <Authenticated>
+            <Link
+              href="/dashboard"
+              className="cursor-pointer rounded-lg bg-pink-500 px-3 py-1.5 font-medium text-white shadow-md transition hover:bg-pink-600"
+            >
+              Dashboard
+            </Link>
+
             <UserButton afterSignOutUrl="/" />
           </Authenticated>
         </div>
-        {isLoading && (
-          <div className="fixed bottom-0 left-0 z-40 flex w-full justify-center">
-            <BarLoader width={500} color="#06b6d4" />
-          </div>
-        )}
       </div>
+
+      {isLoading && (
+        <div className="absolute top-0 left-0 w-full">
+          <div className="h-1 w-full animate-pulse bg-gradient-to-r from-pink-500 via-orange-400 to-pink-500"></div>
+        </div>
+      )}
     </header>
   );
 };
