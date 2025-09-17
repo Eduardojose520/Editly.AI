@@ -1,9 +1,12 @@
 "use client";
-import { UserButton, SignedIn, SignedOut } from "@clerk/nextjs";
+import { useStoreUserEffect } from "@/hooks/useStoreUserEffect";
+import { UserButton } from "@clerk/nextjs";
+import { BarLoader } from "react-spinners";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Authenticated, Unauthenticated } from "convex/react";
 
 const navLinks = [
   { name: "Features", href: "/features" },
@@ -14,6 +17,7 @@ const navLinks = [
 export const Header = () => {
   const path = usePathname();
   const [scrolled, setScrolled] = useState(false);
+  const { isLoading } = useStoreUserEffect();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,7 +65,7 @@ export const Header = () => {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <SignedOut>
+          <Unauthenticated>
             <Link href="/sign-in">
               <button className="cursor-pointer rounded-lg px-4 py-2 font-medium text-white transition hover:text-pink-400">
                 Sign In
@@ -73,12 +77,17 @@ export const Header = () => {
                 Start Editing
               </button>
             </Link>
-          </SignedOut>
+          </Unauthenticated>
 
-          <SignedIn>
+          <Authenticated>
             <UserButton afterSignOutUrl="/" />
-          </SignedIn>
+          </Authenticated>
         </div>
+        {isLoading && (
+          <div className="fixed bottom-0 left-0 z-40 flex w-full justify-center">
+            <BarLoader width={500} color="#06b6d4" />
+          </div>
+        )}
       </div>
     </header>
   );
